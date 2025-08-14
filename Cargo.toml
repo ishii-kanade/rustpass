@@ -1,0 +1,18 @@
+[package]
+name = "rustpass"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+argon2 = "0.5"
+chacha20poly1305 = { version = "0.10", features = ["alloc"] }
+rand = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rpassword = "7"
+uuid = { version = "1", features = ["v4"] }
+time = { version = "0.3", features = ["macros", "formatting"] }
+zeroize = "1"
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+dirs = "5"
